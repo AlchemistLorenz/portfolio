@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Intro() {
   const [text, setText] = useState("");
-  const fullText = "Hi, I’m Lorenz — an aspiring Fullstack Software Engineer.";
+  const fullText = "Hi, I’m Lorenz — an aspiring Full-Stack Software Engineer.";
 
   useEffect(() => {
     let i = 0;
