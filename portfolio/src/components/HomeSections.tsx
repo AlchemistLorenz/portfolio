@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function HomeSection() {
   return (
-    <div className="bg-gray-900 text-gray-100 min-h-screen pt-30">
+    <div className="bg-dark-extra text-off-white min-h-screen pt-30">
       {/* 1. Hero */}
       <section>
         <Home />

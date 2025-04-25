@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Intro() {
   const [text, setText] = useState("");
-  const fullText = "Hi, I’m Lorenz — an aspiring Full-Stack Software Engineer.";
+  const fullText = "Hi, I'm Lorenz - an aspiring developer based in Colorado!";
 
   useEffect(() => {
     let i = 0;
@@ -27,7 +27,7 @@ export default function Intro() {
       </div>
       <h1 className="text-3xl font-mono">{text}</h1>
       <p className="max-w-xl text-center">
-        I build web apps with React, Next.js, and Tailwind—focused on performance and clean design, with backend expertise in Flask, FastAPI, PHP and JavaScript.
+        Innovation Engineer • Full-Stack Alchemist
       </p>
     </div>
   );

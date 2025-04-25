@@ -4,7 +4,7 @@
 html { scroll-behavior: smooth; }
 
 :root {
-  --background: #ffffff;
+  --background: #191716;
   --foreground: #171717;
 }
 
@@ -18,13 +18,19 @@ blockquote, .bio { font-family: 'Lora', serif; }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #191716;
     --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  .hover\:text-purple-haze:hover {
+    --tw-text-opacity: 1;
+    color: rgb(152 95 153 / var(--tw-text-opacity));
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

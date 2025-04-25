@@ -1,13 +1,13 @@
 const timeline = [
     {year: "2000", event: "Born in Denver, Colorado."},
-    {year: "2019", event: "Graduated with Honors from DSST."},
+    {year: "2019", event: "Graduated with Honors from DSST Green Valley Ranch."},
     {year: "2024", event: "Began Working as Store Associate at Costco Wholesale."},
-    {year: "2025", event: "Completed Bachelor's Program in Computer Science from the University of Colorado Denver."}
+    {year: "2025", event: "Completed Bachelor's in Computer Science from University of Colorado Denver."}
 ]
 
 export default function About(){
     return (
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl font-semibold border-b-2 border-gray-700 pb-2">
             Bio
           </h2>
