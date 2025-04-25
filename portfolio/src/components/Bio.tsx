@@ -7,13 +7,6 @@ export default function Bio() {
           {"Lorenz has a knack for building and leading full stack applications, from planning the system architecture and designing UI all the way to solving real world problems with code."}
           {" When not developing, Lorenz loves to care for his bonsai trees, play guitar and video games. Currently, he is studying at University of Colorado at Denver and is giving serious thought to pursuing his master's."}
         </p>
-
-        <a
-            href="#projects"
-            className="mt-6 inline-block bg-red-800 hover:bg-red-900 text-black px-6 py-2 rounded transition"
-            >
-                My Portfolio &rarr;
-            </a>
       </div>
     );
   }

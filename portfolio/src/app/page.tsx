@@ -1,23 +1,11 @@
-import NavBar from "../components/NavBar";
-import Intro from "../components/Home";
-import Bio from "../components/Bio";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
-import About from "../components/About";
+// src/app/page.tsx
+import PageTransition from "../components/PageTransition";
+import HomeSection from "../components/HomeSections";
 
 export default function HomePage() {
   return (
-    <>
-      <NavBar />
-      <main className="bg-gray-900 text-gray-100 pt-20">
-        <section id="home"><Intro /></section> 
-        <section id="bio"><Bio /></section>
-        <section id="about"><About /></section>
-        <section id="projects"><Projects /></section>
-        <section id="skills"><Skills /></section>
-        <section id="contact"><Contact /></section>
-      </main>
-    </>
+      <PageTransition>
+        <HomeSection />
+      </PageTransition>
   );
 }

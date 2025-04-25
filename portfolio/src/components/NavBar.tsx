@@ -8,7 +8,6 @@ const navItems = [
   { label: "Work",   href: "./work" },
   { label: "About",  href: "./about" },
   { label: "Skills", href: "./skills" },    // make sure you have this route
-  { label: "Projects", href: "./projects" },
   { label: "Contact",  href: "./contact" },
 ];
 
