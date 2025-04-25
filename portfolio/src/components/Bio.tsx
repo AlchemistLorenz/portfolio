@@ -1,6 +1,6 @@
 export default function Bio() {
     return (
-      <div className="max-w-2xl mx-auto py-16">
+      <div className="max-w-2xl mx-auto">
         <h2 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 inline-block">About Me</h2>
         <p className="leading-relaxed">
           {"Lorenz (pronounced Lor-enz) is a soon to be college graduate and a full-stack developer based in Denver with a passion for building socially impactful software and business solutions."}

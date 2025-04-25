@@ -1,4 +1,3 @@
-// src/components/HomeSection.tsx
 "use client";
 
 import Home from "./Home";      // your typing-intro + avatar
@@ -9,7 +8,7 @@ import Link from "next/link";
 
 export default function HomeSection() {
   return (
-    <div className="bg-gray-900 text-gray-100 min-h-screen pt-20">
+    <div className="bg-gray-900 text-gray-100 min-h-screen pt-30">
       {/* 1. Hero */}
       <section>
         <Home />

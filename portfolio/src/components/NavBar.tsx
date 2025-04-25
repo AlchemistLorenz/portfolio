@@ -7,7 +7,7 @@ const navItems = [
   { label: "Home",   href: "./Home" },
   { label: "Work",   href: "./work" },
   { label: "About",  href: "./about" },
-  { label: "Skills", href: "./skills" },    // make sure you have this route
+  { label: "Skills", href: "./skills" },  
   { label: "Contact",  href: "./contact" },
 ];
 

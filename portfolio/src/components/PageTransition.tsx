@@ -9,8 +9,7 @@ interface PageTransitionProps {
 }
 
 export default function PageTransition({ children }: PageTransitionProps) {
-  const pathname = usePathname();  // ✅ safe here
-
+  const pathname = usePathname();
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -19,7 +18,7 @@ export default function PageTransition({ children }: PageTransitionProps) {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
-        className="pt-20 min-h-[calc(100vh-5rem)]"
+        className="min-h-[calc(100vh-5rem)]"
       >
         {children}
       </motion.div>

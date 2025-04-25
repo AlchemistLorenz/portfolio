@@ -16,7 +16,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center space-y-6">
+    <div className="flex flex-col items-center justify-center space-y-6">
       <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200">
         <Image
           src="/profile.jpg"
