@@ -1,7 +1,7 @@
 export default function Bio() {
     return (
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 inline-block">About Me</h2>
+        <h2 className="text-2xl font-semibold mb-4 border-b-2 border-[#985F99] pb-2 inline-block">About Me</h2>
         <p className="leading-relaxed">
           {"Lorenz (pronounced Lor-enz) is a soon to be college graduate and a full-stack developer based in Denver with a passion for building socially impactful software and business solutions."}
           {"Lorenz has a knack for building and leading full stack applications, from planning the system architecture and designing UI all the way to solving real world problems with code."}

@@ -8,7 +8,7 @@ const timeline = [
 export default function About(){
     return (
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-semibold border-b-2 border-gray-700 pb-2">
+          <h2 className="text-2xl font-semibold border-b-2 border-[#985F99] pb-2">
             Bio
           </h2>
           <dl className="mt-4 space-y-4">

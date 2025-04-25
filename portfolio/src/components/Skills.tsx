@@ -1,9 +1,8 @@
-// src/components/Skills.tsx
 export default function Skills() {
-    const skills = ["TypeScript","React","Next.js","Node.js","Tailwind","Python","MongoDB","PHP","AI/ML APIs","C/C++","SQL","CI/CD Pipelines"];
+    const skills = ["TypeScript","React","Next.js","Node.js","Tailwind","Python","MongoDB","PHP","AI/ML","C/C++","SQL","CI/CD Pipelines"];
     return (
       <div className="max-w-2xl mx-auto py-16 ">
-        <h2 className="text-2xl font-semibold mb-6 border-b-2 border-gray-700 pb-2">Skills</h2>
+        <h2 className="text-2xl font-semibold mb-6 border-b-2 border-[#985F99] pb-2">Skills</h2>
         <ul className="flex flex-wrap gap-4">
           {skills.map(skill => (
             <li

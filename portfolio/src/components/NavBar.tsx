@@ -28,7 +28,7 @@ export default function NavBar() {
   return (
     <nav className="fixed top-0 w-full bg-dark-extra/70 backdrop-blur z-50">
       <div className="max-w-4xl mx-auto flex items-center justify-between p-4">
-        <Link href="/" className="font-bold text-xl text-off-white">
+        <Link href="/" className="font-bold text-xl text-off-white hover:text-purple-haze transition">
           Lorenz V. Wilkins
         </Link>
         <ul className="flex items-center space-x-8">
@@ -48,7 +48,7 @@ export default function NavBar() {
                     ? { target: "_blank", rel: "noopener noreferrer" }
                     : {})}
                   className={`transition ${colorClasses} flex items-center space-x-2`}
-                  aria-label={icon ? "View source on GitHub" : undefined}
+                  aria-label={icon ? "View source code on GitHub" : undefined}
                 >
                   {icon && <span>{icon} </span>}
                   {label && <span>{label} </span>}
