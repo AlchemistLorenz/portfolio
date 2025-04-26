@@ -1,36 +1,25 @@
 "use client";
 
-import Home from "./Home";      // your typing-intro + avatar
-import Timeline from "./About"; // the year-event list
-import About from "./Bio";      // your Bio paragraph + “My Portfolio” button
-import Skills from "./Skills";  // your skill pills
+import Home from "./Home";
+import Timeline from "./About";
+import About from "./Bio";
+import Skills from "./Skills";
 import Link from "next/link";
 
 export default function HomeSection() {
   return (
     <div className="bg-dark-extra text-off-white min-h-screen pt-30">
-      {/* 1. Hero */}
       <section>
         <Home />
       </section>
-
-      {/* 2. Timeline • Bio • Skills */}
-      <section className="max-w-3xl mx-auto py-16 space-y-12 text-center">
-        {/* Timeline */}
+      <section className="max-w-3xl mx-auto py-12 space-y-8 text-center">
         <Timeline />
-
-        {/* About paragraph */}
         <About />
-
-        {/* Skills list */}
         <Skills />
-
-        {/* Call-to-action → Work page */}
         <Link
           href="/work"
-          className="inline-block mt-8 bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded transition"
-        >
-          View My Work →
+          className="inline-block mt-8 bg-[#BB4430] hover:bg-[#EB5E28] text-white px-6 py-2 rounded transition">
+          View My Portfolio →
         </Link>
       </section>
     </div>
