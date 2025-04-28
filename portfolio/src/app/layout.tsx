@@ -13,8 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="bg-gray-900 text-gray-100 antialiased">
         <NavBar />
-        <main className="">
-        {/* This is your only client‐side “usePathname” wrapper */}
+        <main className="pt-20">
         <PageTransition>
           {children}
         </PageTransition>

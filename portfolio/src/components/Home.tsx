@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import SecretButton from "./SecretButton";
 
 export default function Intro() {
   const [text, setText] = useState("");
-  const fullText = "Hi, I'm Lorenz - an aspiring developer based in Colorado!";
+  const [clicks, setClicks] = useState(0);
+  const fullText = "Hi, I'm Lorenz - an aspiring developer based in Colorado";
 
   useEffect(() => {
     let i = 0;
@@ -17,7 +19,9 @@ export default function Intro() {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-6">
-      <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200">
+      <div onClick={() => setClicks(c => c + 1)} className="cursor-pointer relative w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200"
+        title={`Clicks: ${clicks} / 5`}
+        >
         <Image
           src="/profile.jpg"
           alt="Lorenz Wilkins"
@@ -29,6 +33,7 @@ export default function Intro() {
       <p className="max-w-xl text-center">
         Innovation Engineer • Full-Stack Alchemist
       </p>
+      <SecretButton triggered={clicks >= 5} />
     </div>
   );
 }
