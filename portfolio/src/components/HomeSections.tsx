@@ -8,19 +8,23 @@ import Link from "next/link";
 
 export default function HomeSection() {
   return (
-    <div className="bg-dark-extra text-off-white min-h-screen pt-30">
+    <div className="bg-dark-extra text-off-white min-h-screen pt-20">
       <section>
         <Home />
       </section>
-      <section className="max-w-3xl mx-auto py-16 space-y-12 text-center">
+      <section className="max-w-3xl mx-auto py-16 space-y-2 text-center">
         <Timeline />
+      <section className="max-w-3xl py-5 text-center">
         <About />
+      </section>
+      <section className="max-w-3xl text-center">
         <Skills />
         <Link
           href="/work"
-          className="inline-block -mt-12 bg-[#BB4430] hover:bg-[#EB5E28] text-white px-6 py-2 rounded transition">
+          className="inline-block bg-[#BB4430] hover:bg-[#EB5E28] text-white px-6 py-2 rounded transition">
           View My Portfolio →
         </Link>
+        </section>
       </section>
     </div>
   );
