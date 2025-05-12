@@ -30,5 +30,15 @@ export const projects: Project[] = [
         repo: "https://github.com/GucciRemyBoi/secondserving",
         stack: ["FastAPI", "Flask", "React", "MongoDB", "Render"],
     },
+    {
+        slug: "honey-pot",
+        title: "Honey Pot with Flask & Machine Learning Comparison",
+        thumbnail:"/pythonLogo.png",
+        short: "Researching the effectiveness of logistic regression and random forest classifiers for honey pot detection.",
+        description: "Low interaction honeypot made to study the effectiveness of logistic regression and random forest classifiers. Soon to be a honeypot for detecting malicious activity on a network.",
+        images: ["/model_comparison_chart.png", "/rf_confusion_matrix.png"],
+        repo: "https://github.com/GucciRemyBoi/honeypotproject",
+        stack: ["Python", "Flask", "Machine Learning", "Scikit-learn", "Pandas", "Shell Scripting"],
+    },
     // More Projects Added Here
 ];
