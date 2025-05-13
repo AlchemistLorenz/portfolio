@@ -15,7 +15,7 @@ const navItems: NavItem[] = [
   { label: "Works",    href: "/work" },
   { label: "Skills", href: "/skills" },
   { label: "Contact", href: "/contact" },
-  { label: "Garden", href: "/garden" },
+  { label: "Garden", href: "/notes" },
   { label: "Source",
     href: "https://github.com/GucciRemyBoi/portfolio",
     icon: <FaGithub size={24} />,
