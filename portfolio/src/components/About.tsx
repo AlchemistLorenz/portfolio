@@ -16,10 +16,10 @@ export default function About(){
             Bio
           </h2>
           <dl className="mt-4 space-y-4">
-            {timeline.map(({ year, event }) => (
-              <div key={year} className="flex">
-                <dt className="w-24 font-mono text-off-white">{year}</dt>
-                <dd>{event}</dd>
+            {timeline.map(({ year, event }, index) => (
+              <div key={index} className="flex items-start space-x-4">
+                <dt className="w-24 font-mono text-off-white text-right pr-2">{year || "-"}</dt>
+                <dd className="text-left">{event}</dd>
               </div>
             ))}
           </dl>

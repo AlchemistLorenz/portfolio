@@ -19,7 +19,7 @@ export default function ProjectDetail({ params }: Params) {
             <div key={src} className="relative w-full h-64 rounded overflow-hidden">
               <Image
                 src={src}
-                alt={project.title}
+                alt={`Image of ${project.title}`}
                 width={640}
                 height={360}
                 quality={100}
