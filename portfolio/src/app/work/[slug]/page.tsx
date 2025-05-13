@@ -77,7 +77,7 @@ export default async function ProjectDetail({ params }: Params) {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-1 bg-[#BB4430] hover:bg-[#EB5E28] px-5 py-2 rounded transition mx-auto mr-4"
-          >
+            legacyBehavior>
             <FaGithub size={20} />
             <span>Source</span>
           </Link>

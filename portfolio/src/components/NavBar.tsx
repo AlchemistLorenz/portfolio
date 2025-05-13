@@ -50,7 +50,7 @@ export default function NavBar() {
                     : {})}
                   className={`transition ${colorClasses} flex items-center space-x-2`}
                   aria-label={icon ? "View source code on GitHub" : undefined}
-                >
+                  legacyBehavior>
                   {icon && <span>{icon} </span>}
                   {label && <span>{label} </span>}
                 </Link>

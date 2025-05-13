@@ -37,7 +37,7 @@ export default function WorkPage() {
           key={p.slug}
           href={`/work/${p.slug}`}
           className="block border rounded-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-transform duration-300"
-        >
+          legacyBehavior>
           <div className="relative w-full h-56">
             <Image
               src={p.thumbnail}
