@@ -4,32 +4,14 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const notesDirectory = path.join(process.cwd(), "src/content/notes");
+// Removed notesDirectory as the notes directory is no longer present
 
 export function getAllNotes() {
-  const fileNames = fs.readdirSync(notesDirectory);
-  return fileNames.map((fileName) => {
-    const fullPath = path.join(notesDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-    const { data, content } = matter(fileContents);
-
-    return {
-      slug: fileName.replace(/\.md$/, ""),
-      ...data,
-      content,
-    };
-  });
+  // Return an empty array as there are no notes to process
+  return [];
 }
 
 export async function getNoteBySlug(slug: string) {
-  const fullPath = path.join(notesDirectory, `${slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
-  const processedContent = await remark().use(html).process(content);
-
-  return {
-    slug,
-    ...data,
-    content: processedContent.toString(),
-  };
+  // Throw an error as there are no notes to fetch
+  throw new Error("Notes directory is missing. Cannot fetch note by slug.");
 }
