@@ -1,7 +1,5 @@
 const timeline = [
     { year: "2000", event: "Born in Denver, Colorado." },
-    { year: "2011", event: "Began Learning Lua Programming Language." },
-    { year: "2012", event: "Made my First Roblox Model." },
     { year: "2014", event: "Made my First Roblox Game, 'The Escape'." },
     { year: "2019", event: "Began my bachelor's degree in Computer Science at University of Colorado Denver" },
     { year: "2021", event: "Made my first project in Python, a CL Bug Tracker." },

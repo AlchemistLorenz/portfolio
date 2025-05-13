@@ -23,7 +23,7 @@ export default function Intro() {
         title={`Clicks: ${clicks} / 5`}
         >
         <Image
-          src="/profile.jpg"
+          src="/images/projects/profile.jpg"
           alt="Profile picture of Lorenz Wilkins"
           fill
           className="object-cover"

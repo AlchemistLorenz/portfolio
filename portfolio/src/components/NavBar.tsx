@@ -12,10 +12,10 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Work",    href: "/work" },
+  { label: "Works",    href: "/work" },
   { label: "Contact", href: "/contact" },
-  { label: "Posts", href: "/posts"},
-  { label:" Source",
+  { label: "Garden", href: "/garden" },
+  { label: "Source",
     href: "https://github.com/GucciRemyBoi/portfolio",
     icon: <FaGithub size={24} />,
     external: true,
