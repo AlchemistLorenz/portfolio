@@ -18,7 +18,6 @@ export default function HomeSection() {
         <About />
       </section>
       <section className="max-w-3xl text-center">
-        <Skills />
         <Link
           href="/work"
           className="inline-block bg-[#BB4430] hover:bg-[#EB5E28] text-white px-6 py-2 rounded transition">
