@@ -4,8 +4,6 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-// Removed notesDirectory as the notes directory is no longer present
-
 export function getAllNotes() {
   // Return an empty array as there are no notes to process
   return [];
