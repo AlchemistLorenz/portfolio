@@ -5,7 +5,7 @@ module.exports = {
       "./src/components/**/*.{js,ts,jsx,tsx}"
     ],
     safelist: [ {
-      pattern: /text-purple-haze/,      // match both text-purple-haze
+      pattern: /text-purple-haze/,   
       variants: ['hover', 'focus'],
     }
   ],

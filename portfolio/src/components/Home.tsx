@@ -31,8 +31,8 @@ export default function Intro() {
       </div>
       <h1 className="text-3xl font-mono">{text}</h1>
       <p className="max-w-xl text-center">
-        Social Engineer 
-        <span aria-hidden="true">•</span> Full-Stack Alchemist
+        Social Engineer
+        <span aria-hidden="true"> • </span> Full-Stack Alchemist
       </p>
       <SecretButton triggered={clicks >= 5} />
     </div>
