@@ -3,7 +3,7 @@ import { FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 export default function ContactDropdown() {
   return (
     <div className="absolute top-full left-1 mt-2 bg-dark-extra text-off-white shadow-lg p-4 animate-slide-down rounded-md z-50 w-max">
-      <h2 className="text-2xl font-bold mb-4">Connect with Me</h2>
+      <h2 className="text-2xl font-bold mb-4"> Links </h2>
       <ul className="space-y-4">
         <li>
           <a

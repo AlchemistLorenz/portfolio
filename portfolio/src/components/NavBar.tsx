@@ -53,7 +53,7 @@ export default function NavBar() {
               onClick={() => setIsContactOpen(!isContactOpen)}
               className="hover:text-purple-haze transition"
             >
-              Contact
+              On the Web
             </button>
             {isContactOpen && <ContactDropdown />}
           </li>
