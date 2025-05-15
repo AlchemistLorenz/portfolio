@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
+import ContactDropdown from "./ContactDropdown";
 
 type NavItem = {
   label?: string;
@@ -12,9 +14,8 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Works",    href: "/work" },
+  { label: "Works", href: "/work" },
   { label: "Skills", href: "/skills" },
-  { label: "Contact", href: "/contact" },
   { label: "Garden", href: "/notes" },
   { label: "Source",
     href: "https://github.com/GucciRemyBoi/portfolio",
@@ -25,6 +26,7 @@ const navItems: NavItem[] = [
 
 export default function NavBar() {
   const pathname = usePathname();
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 w-full bg-dark-extra/70 backdrop-blur z-50">
@@ -33,23 +35,38 @@ export default function NavBar() {
           Lorenz V. Wilkins
         </Link>
         <ul className="flex items-center space-x-8">
-          {navItems.map(({ label, href, icon, external }) => {
-            const isActive = !external && pathname === href;
-            const colorClasses = external
-              ? "text-off-white hover:text-purple-haze"
-              : isActive
+          {navItems.filter(({ external }) => !external).map(({ label, href }) => {
+            const isActive = pathname === href;
+            const colorClasses = isActive
               ? "text-purple-haze font-semibold"
               : "text-off-white hover:text-purple-haze";
-
+            return (
+              <li key={href}>
+                <Link href={href} className={`transition ${colorClasses}`}>
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
+          <li className="relative">
+            <button
+              onClick={() => setIsContactOpen(!isContactOpen)}
+              className="hover:text-purple-haze transition"
+            >
+              Contact
+            </button>
+            {isContactOpen && <ContactDropdown />}
+          </li>
+          {navItems.filter(({ external }) => external).map(({ label, href, icon }) => {
+            const colorClasses = "text-off-white hover:text-purple-haze";
             return (
               <li key={href}>
                 <Link
                   href={href}
-                  {...(external
-                    ? { target: "_blank", rel: "noopener noreferrer" }
-                    : {})}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`transition ${colorClasses} flex items-center space-x-2`}
-                  aria-label={icon ? "View source code on GitHub" : undefined}
+                  aria-label="View source code on GitHub"
                 >
                   <span className="flex items-center space-x-2">
                     {icon && <span>{icon}</span>}

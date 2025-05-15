@@ -3,7 +3,6 @@
 import Home from "./Home";
 import Timeline from "./About";
 import About from "./Bio";
-import Sidebar from "./Sidebar";
 import Link from "next/link";
 
 export default function HomeSection() {
@@ -11,7 +10,7 @@ export default function HomeSection() {
     <div className="bg-dark-extra text-off-white min-h-screen pt-20">
       <section>
         <Home />
-        <Sidebar />
+        {/* Sidebar removed */}
       </section>
       <section className="max-w-3xl mx-auto py-16 space-y-2 text-center">
         <Timeline />
