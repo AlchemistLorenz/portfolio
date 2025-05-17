@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
 import ContactDropdown from "./ContactDropdown";
+import UnderConstructionModal from "./UnderConstructionModal";
 
 type NavItem = {
   label?: string;
@@ -27,6 +28,7 @@ const navItems: NavItem[] = [
 export default function NavBar() {
   const pathname = usePathname();
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const [showUnderConstruction, setShowUnderConstruction] = useState(false);
 
   return (
     <nav className="fixed top-0 w-full bg-dark-extra/70 backdrop-blur z-50">
@@ -40,6 +42,22 @@ export default function NavBar() {
             const colorClasses = isActive
               ? "text-purple-haze font-semibold"
               : "text-off-white hover:text-purple-haze";
+            // Intercept Garden link
+            if (href === "/notes") {
+              return (
+                <li key={href}>
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setShowUnderConstruction(true);
+                    }}
+                    className={`transition ${colorClasses}`}
+                  >
+                    {label}
+                  </button>
+                </li>
+              );
+            }
             return (
               <li key={href}>
                 <Link href={href} className={`transition ${colorClasses}`}>
@@ -48,6 +66,9 @@ export default function NavBar() {
               </li>
             );
           })}
+          {showUnderConstruction && (
+            <UnderConstructionModal onClose={() => setShowUnderConstruction(false)} />
+          )}
           <li className="relative">
             <button
               onClick={() => setIsContactOpen(!isContactOpen)}

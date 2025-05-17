@@ -7,7 +7,7 @@ export default function ContactDropdown() {
       <ul className="space-y-4">
         <li>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/AlchemistLorenz"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 hover:text-purple-haze transition"
@@ -29,7 +29,7 @@ export default function ContactDropdown() {
         </li>
         <li>
           <a
-            href="https://instagram.com/yourusername"
+            href="https://instagram.com/thealchemistlorenz"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 hover:text-purple-haze transition"
