@@ -4,9 +4,13 @@
 html { scroll-behavior: smooth; }
 
 :root {
-  --background: #191716;
-  --foreground: #171717;
-}
+    --background: #191716;
+    --foreground: #ededed;
+    --primary-text-color: #ededed;
+    --secondary-text-color: #b0b0b0;
+    --toggle-bg: #ededed;
+    --toggle-fg: #191716;
+  }
 
 @keyframes fade-in {
   from { opacity: 0; }
@@ -43,6 +47,10 @@ blockquote, .bio { font-family: 'Lora', serif; }
   :root {
     --background: #191716;
     --foreground: #ededed;
+    --primary-text-color: #ededed;
+    --secondary-text-color: #191716;
+    --toggle-bg: #ededed;
+    --toggle-fg: #191716;
   }
 }
 
@@ -54,6 +62,13 @@ blockquote, .bio { font-family: 'Lora', serif; }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--foreground-color);
+  color: var(--secondary-text-color);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--background);
+  --foreground-color: var(--foreground);
+  --primary-text-color: var(--primary-text-color);
+  --secondary-text-color: var(--secondary-text-color);
 }

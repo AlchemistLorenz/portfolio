@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   console.log("RootLayout rendered");
   return (
     <html lang="en">
-      <body className="bg-gray-900 text-gray-100 antialiased">
+      <body className="bg-gray-900 text-gray-100 antialiased data-theme-dark">
         <NavBar />
         <PageTransition>
           <main className="pt-20">{children}</main>
