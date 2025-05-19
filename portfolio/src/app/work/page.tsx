@@ -36,40 +36,40 @@ export default function WorkPage() {
         <Link
           key={p.slug}
           href={`/work/${p.slug}`}
-          className="block border rounded-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-transform duration-300"
+          className="group flex flex-col h-full border rounded-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:scale-105"
         >
-          <div>
-            <div className="relative w-full h-56">
-              <Image
-                src={p.thumbnail}
-                alt={p.title}
-                fill
-                className="object-cover hover:opacity-90 transition-opacity duration-300"
-                placeholder="blur"
-                blurDataURL="/images/projects/placeholder.png"
-                priority={index < 3}
-              />
-            </div>
-            <div className="p-4 bg-[#1E1E1E] hover:bg-[#2A2A2A] transition-colors duration-300">
+          <div className="relative w-full h-56">
+            <Image
+              src={p.thumbnail}
+              alt={p.title}
+              fill
+              className="object-cover hover:opacity-90 transition-opacity duration-300"
+              placeholder="blur"
+              blurDataURL="/images/projects/placeholder.png"
+              priority={index < 3}
+            />
+          </div>
+          <div className="p-4 bg-[#1E1E1E] group-hover:bg-[#2A2A2A] transition-colors duration-300 flex-grow flex flex-col">
+            <div>
               <h3 className="font-semibold text-lg text-white">{p.title}</h3>
               <p className="text-sm text-[#E0E2DB] mb-2">{p.short}</p>
-              <div className="flex flex-wrap gap-2">
-                {p.stack.map((skill) => {
-                  const skillData = skillIcons[skill];
-                  const IconComponent = skillData ? iconComponents[skillData.icon as keyof typeof iconComponents] : null;
+            </div>
+            <div className="mt-auto flex flex-wrap gap-2">
+              {p.stack.map((skill) => {
+                const skillData = skillIcons[skill];
+                const IconComponent = skillData ? iconComponents[skillData.icon as keyof typeof iconComponents] : null;
 
-                  return (
-                    <span
-                      key={skill}
-                      className="flex items-center gap-1 px-2 py-1 border rounded-full text-sm hover:scale-105 hover:bg-opacity-20 transition"
-                      style={{ borderColor: skillData?.color || "#ccc", color: skillData?.color || "#fff", backgroundColor: skillData?.color ? `${skillData.color}33` : "transparent" }}
-                    >
-                      {IconComponent && <IconComponent size={16} />}
-                      {skill}
-                    </span>
-                  );
-                })}
-              </div>
+                return (
+                  <span
+                    key={skill}
+                    className="flex items-center gap-1 px-2 py-1 border rounded-full text-sm hover:scale-105 hover:bg-opacity-20 transition"
+                    style={{ borderColor: skillData?.color || "#ccc", color: skillData?.color || "#fff", backgroundColor: skillData?.color ? `${skillData.color}33` : "transparent" }}
+                  >
+                    {IconComponent && <IconComponent size={16} />}
+                    {skill}
+                  </span>
+                );
+              })}
             </div>
           </div>
         </Link>
