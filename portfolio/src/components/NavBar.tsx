@@ -30,15 +30,24 @@ export default function NavBar() {
   const pathname = usePathname();
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [showUnderConstruction, setShowUnderConstruction] = useState(false);
-  // Theme setup
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    const stored = typeof window !== "undefined" && localStorage.getItem("theme");
-    return stored === "dark" ? "dark" : "light";
-  });
-  // Initialize theme on mount
+  // Theme setup with SSR-safe default
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+  // On mount, load stored theme or system preference
   useEffect(() => {
-    const root = document.documentElement;
-    root.dataset.theme = theme;
+    const stored = localStorage.getItem("theme");
+    if (stored === "light" || stored === "dark") {
+      setTheme(stored);
+    } else {
+      setTheme(
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light"
+      );
+    }
+  }, []);
+  // Apply theme attribute and persist on change
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
     localStorage.setItem("theme", theme);
   }, [theme]);
 
