@@ -3,14 +3,25 @@
 
 html { scroll-behavior: smooth; }
 
+/* Light theme (default) */
 :root {
-    --background: #191716;
-    --foreground: #ededed;
-    --primary-text-color: #ededed;
-    --secondary-text-color: #b0b0b0;
-    --toggle-bg: #ededed;
-    --toggle-fg: #191716;
-  }
+  --background: #ededed;
+  --foreground: #191716;
+  --primary-text-color: #191716;
+  --secondary-text-color: #6e6e6e;
+  --toggle-bg: #191716;
+  --toggle-fg: #ededed;
+}
+
+/* Dark theme override */
+[data-theme="dark"] {
+  --background: #191716;
+  --foreground: #ededed;
+  --primary-text-color: #ededed;
+  --secondary-text-color: #b0b0b0;
+  --toggle-bg: #ededed;
+  --toggle-fg: #191716;
+}
 
 @keyframes fade-in {
   from { opacity: 0; }
@@ -43,17 +54,7 @@ p,li { font-family: 'Poppins', sans-serif; }
 
 blockquote, .bio { font-family: 'Lora', serif; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #191716;
-    --foreground: #ededed;
-    --primary-text-color: #ededed;
-    --secondary-text-color: #191716;
-    --toggle-bg: #ededed;
-    --toggle-fg: #191716;
-  }
-}
-
+/* Utilities */
 @layer utilities {
   .hover\:text-purple-haze:hover {
     --tw-text-opacity: 1;
@@ -62,13 +63,6 @@ blockquote, .bio { font-family: 'Lora', serif; }
 }
 
 body {
-  background: var(--foreground-color);
-  color: var(--secondary-text-color);
-}
-
-[data-theme="dark"] {
-  --background-color: var(--background);
-  --foreground-color: var(--foreground);
-  --primary-text-color: var(--primary-text-color);
-  --secondary-text-color: var(--secondary-text-color);
+  background-color: var(--background);
+  color: var(--foreground);
 }
