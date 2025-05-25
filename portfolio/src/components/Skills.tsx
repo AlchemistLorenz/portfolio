@@ -73,8 +73,15 @@ export default function Skills() {
             <h2 className="text-3xl font-bold text-center mb-12 text-off-white]">Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {Object.entries(skillSections).map(([section, skills]) => (
-                    <div key={section} className="bg-[#985F99] p-6 rounded-lg shadow-md">
-                        <h3 className="text-xl font-semibold mb-4 text-off-white border-b border-gray-600 pb-2 text-center">{section}</h3>
+                    <div
+                        key={section}
+                        className="p-6 rounded-lg shadow-md"
+                        style={{
+                            backgroundColor: 'var(--foreground)',
+                            color: 'var(--background)',
+                        }}
+                    >
+                        <h3 className="text-xl font-semibold mb-4 border-b border-gray-600 pb-2 text-center">{section}</h3>
                         <ul className="space-y-2">
                             {skills.map(skill => {
                                 if (typedSkillIcons.hasOwnProperty(skill)) {
