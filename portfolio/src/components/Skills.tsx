@@ -1,5 +1,5 @@
 import { FaHtml5, FaReact, FaPython, FaTerminal, FaNodeJs, FaJs, FaCss3Alt, FaRocket, FaServer, FaLock, FaGit, FaGithub } from "react-icons/fa";
-import { SiFlask, SiFastapi, SiMongodb, SiTensorflow, SiScikitlearn, SiPandas, SiRender, SiTypescript, SiNextdotjs, SiTailwindcss, SiPhp, SiCplusplus, SiMysql, SiJenkins, SiGraphql, SiRedis, SiFirebase, SiWebpack, SiEslint, SiGithubactions, SiCircleci, SiJest, SiFigma, SiKubernetes, SiDocker, SiGooglecloud, SiCypress, SiPostgresql } from "react-icons/si";
+import { SiFlask, SiFastapi, SiMongodb, SiTensorflow, SiScikitlearn, SiPandas, SiRender, SiTypescript, SiNextdotjs, SiTailwindcss, SiPhp, SiCplusplus, SiMysql, SiJenkins, SiGraphql, SiRedis, SiFirebase, SiWebpack, SiEslint, SiGithubactions, SiCircleci, SiJest, SiFigma, SiKubernetes, SiDocker, SiGooglecloud, SiCypress, SiPostgresql, SiMicrosoftazure, SiAmazonaws } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
 import { skillIcons, SkillIcon as ProjectSkillIcon } from "../data/projects";
 
@@ -45,6 +45,8 @@ const iconComponents = {
     SiGooglecloud,
     SiCypress,
     SiPostgresql,
+    SiMicrosoftazure,
+    SiAmazonaws,
 };
 
 interface SkillIcon {
@@ -61,7 +63,7 @@ const skillSections = {
     Database: ["MongoDB", "PostgreSQL", "Redis", "Firebase", "SQL"],
     DevOps: ["Docker", "Kubernetes", "GitHub Actions", "CircleCI", "CI/CD Pipelines", "Shell Scripting"],
     Cloud: ["AWS", "Google Cloud Platform", "Azure"],
-    Testing: ["Unit Testing (Jest, Mocha)", "End-to-End Testing (Cypress, Playwright)"],
+    Testing: ["Unit Testing (Jest, Mocha)"],
     Tools: ["Webpack/Vite", "ESLint/Prettier", "Figma", "Git", "GitHub/GitLab"],
     DataScience: ["Python", "Machine Learning", "Scikit-learn", "Pandas"],
     SoftSkills: ["Problem-Solving", "Communication", "Team Collaboration", "Time Management"],
@@ -71,11 +73,11 @@ export default function Skills() {
     return (
         <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 text-off-white]">Skills</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="flex overflow-x-auto space-x-6 snap-x snap-mandatory p-4">
                 {Object.entries(skillSections).map(([section, skills]) => (
                     <div
                         key={section}
-                        className="p-6 rounded-lg shadow-md"
+                        className="snap-start flex-shrink-0 min-w-[280px] p-6 rounded-lg shadow-md"
                         style={{
                             backgroundColor: 'var(--foreground)',
                             color: 'var(--background)',
@@ -89,19 +91,24 @@ export default function Skills() {
                                     const IconComponent = iconComponents[icon];
 
                                     return (
-                                        <li
-                                            key={skill}
-                                            className="flex flex-col gap-2 p-2 bg-gray-700 rounded-md hover:bg-gray-600 transition"
-                                        >
-                                            <div className="flex items-center gap-3">
-                                                {IconComponent && <IconComponent size={24} color={color} />}
-                                                <span className="text-white">{skill}</span>
+                                        <li key={skill} className="flex flex-col gap-2">
+                                            {/* Pill wrapper for icon and label */}
+                                            <div
+                                                className="inline-flex items-center gap-2 px-3 py-1 rounded-full transition hover:brightness-110"
+                                                style={{ backgroundColor: color, color: '#fff' }}
+                                            >
+                                                {IconComponent && <IconComponent size={16} />}
+                                                <span className="text-sm font-medium">{skill}</span>
                                             </div>
-                                            <div className="w-full bg-gray-600 rounded-full h-2.5">
+                                            {/* Proficiency bar */}
+                                            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
                                                 <div
-                                                    className="bg-[#EB5E28] h-2.5 rounded-full"
-                                                    style={{ width: `${typedSkillIcons[skill]?.proficiency || 0}%` }}
-                                                ></div>
+                                                    className="h-2.5 rounded-full"
+                                                    style={{
+                                                        width: `${typedSkillIcons[skill]?.proficiency || 0}%`,
+                                                        backgroundColor: color,
+                                                    }}
+                                                />
                                             </div>
                                         </li>
                                     );
