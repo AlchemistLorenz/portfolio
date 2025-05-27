@@ -1,5 +1,5 @@
-import { FaHtml5, FaReact, FaPython, FaTerminal, FaNodeJs, FaJs, FaCss3Alt, FaRocket, FaServer, FaLock, FaGit, FaGithub } from "react-icons/fa";
-import { SiFlask, SiFastapi, SiMongodb, SiTensorflow, SiScikitlearn, SiPandas, SiRender, SiTypescript, SiNextdotjs, SiTailwindcss, SiPhp, SiCplusplus, SiMysql, SiJenkins, SiGraphql, SiRedis, SiFirebase, SiWebpack, SiEslint, SiGithubactions, SiCircleci, SiJest, SiFigma, SiKubernetes, SiDocker, SiGooglecloud, SiCypress, SiPostgresql, SiMicrosoftazure, SiAmazonaws } from "react-icons/si";
+import { FaHtml5, FaReact, FaPython, FaTerminal, FaNodeJs, FaJs, FaCss3Alt, FaRocket, FaServer, FaLock, FaGit, FaGithub, FaMicrosoft, FaAws } from "react-icons/fa";
+import { SiFlask, SiFastapi, SiMongodb, SiTensorflow, SiScikitlearn, SiPandas, SiRender, SiTypescript, SiNextdotjs, SiTailwindcss, SiPhp, SiCplusplus, SiMysql, SiJenkins, SiGraphql, SiRedis, SiFirebase, SiWebpack, SiEslint, SiGithubactions, SiCircleci, SiJest, SiFigma, SiKubernetes, SiDocker, SiGooglecloud, SiCypress, SiPostgresql } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
 import { skillIcons, SkillIcon as ProjectSkillIcon } from "../data/projects";
 
@@ -45,8 +45,8 @@ const iconComponents = {
     SiGooglecloud,
     SiCypress,
     SiPostgresql,
-    SiMicrosoftazure,
-    SiAmazonaws
+    FaMicrosoft,
+    FaAws,
 };
 
 interface SkillIcon {
