@@ -83,7 +83,7 @@ export const skillIcons: Record<string, SkillIcon> = {
     "ESLint/Prettier": { icon: "SiEslint", color: "#4B32C3", proficiency: 85 },
     "GitHub Actions": { icon: "SiGithubactions", color: "#2088FF", proficiency: 75 },
     CircleCI: { icon: "SiCircleci", color: "#343434", proficiency: 70 },
-    Azure: { icon: "SiMicrosoftazure", color: "#0078D4", proficiency: 70 },
+    Azure: { icon: "SiMicrosoftAzure", color: "#0078D4", proficiency: 70 },
     "Unit Testing (Jest, Mocha)": { icon: "SiJest", color: "#C21325", proficiency: 70 },
     Figma: { icon: "SiFigma", color: "#F24E1E", proficiency: 75 },
     Git: { icon: "FaGit", color: "#F05032", proficiency: 85 },
