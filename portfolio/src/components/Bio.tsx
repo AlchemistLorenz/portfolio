@@ -3,9 +3,9 @@ export default function Bio() {
       <div className="max-w-2xl mx-auto">
         <h2 className="text-2xl font-semibold mb-4 border-b-2 border-[#985F99] pb-2 inline-block">About Me</h2>
         <p className="leading-relaxed">
-          {"Lorenz (pronounced Lor-enz) is a college graduate and skilled full-stack developer based in Denver, Colorado. He is passionate about creating innovative software and business solutions that make a positive social impact. "}
-          {"With expertise in developing full-stack applications, Lorenz excels in planning system architecture and designing user interfaces while effectively solving real-world problems through coding. He is proficient in various programming languages, including Python, JavaScript, and C++, and has experience with frameworks such as React, Node.js, and Django. "}
-          {"In his spare time, he enjoys caring for his bonsai trees, playing guitar, and gaming. Currently studying at the University of Colorado Denver, Lorenz is considering pursuing a master's degree to further enhance his skills and knowledge in the field."}
+          {"Lorenz (pronounced Lor-enz) is a recent Computer Science graduate from CU Denver, Lorenz is currently pursuing a master's in Systems Engineering at the University of Denver. Based in Denver, Colorado, he expertly merges technical skill with a mission-driven mindset, focusing on creating innovative software that makes a tangible impact. "}
+          {"As the lead developer of Second Serving, an award-winning AI-powered food-sharing platform developed during a hackathon, Lorenz played a pivotal role in crafting a solution aimed at reducing food waste and alleviating hunger through community-centric technology. Under his leadership, the project continues to grow, with exciting new features slated for release this summer."}
+          {" In his spare time, he enjoys caring for his bonsai trees, playing guitar, and gaming."}
         </p>
       </div>
     );
