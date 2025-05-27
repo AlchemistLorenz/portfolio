@@ -30,9 +30,7 @@ const iconComponents = {
   SiJenkins,
 };
 
-interface Params { params: { slug: string } }
-
-export default async function ProjectDetail({ params }: Params) {
+export default async function ProjectDetail({ params }: { params: { slug: string } }) {
   console.log("Params:", params);
   console.log("Available slugs:", projects.map((p) => p.slug));
 
