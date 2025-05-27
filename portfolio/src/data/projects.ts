@@ -1,5 +1,5 @@
 export type SkillIcon = {
-    icon: "SiFlask" | "FaHtml5" | "VscJson" | "SiFastapi" | "FaReact" | "SiMongodb" | "SiRender" | "FaPython" | "SiTensorflow" | "SiScikitlearn" | "SiPandas" | "FaTerminal" | "SiTypescript" | "SiNextdotjs" | "FaNodeJs" | "SiTailwindcss" | "SiPhp" | "SiCplusplus" | "SiMysql" | "SiJenkins" | "FaJs" | "FaCss3Alt" | "FaRocket" | "FaServer" | "SiGraphql" | "FaLock" | "SiRedis" | "SiFirebase" | "SiWebpack" | "SiEslint" | "SiGithubactions" | "SiCircleci" | "SiMicrosoftazure" | "SiJest" | "SiFigma" | "FaGit" | "FaGithub" | "SiKubernetes" | "SiDocker" | "SiAmazonaws" | "SiGooglecloud" | "SiCypress" | "SiPostgresql";
+    icon: "SiFlask" | "FaHtml5" | "VscJson" | "SiFastapi" | "FaReact" | "SiMongodb" | "SiRender" | "FaPython" | "SiTensorflow" | "SiScikitlearn" | "SiPandas" | "FaTerminal" | "SiTypescript" | "SiNextdotjs" | "FaNodeJs" | "SiTailwindcss" | "SiPhp" | "SiCplusplus" | "SiMysql" | "SiJenkins" | "FaJs" | "FaCss3Alt" | "FaRocket" | "FaServer" | "FaLock" | "SiGraphql" | "SiRedis" | "SiFirebase" | "SiWebpack" | "SiEslint" | "SiGithubactions" | "SiCircleci" | "SiJest" | "SiFigma" | "FaGit" | "FaGithub" | "SiKubernetes" | "SiDocker" | "SiGooglecloud" | "SiCypress" | "SiPostgresql" | "FaMicrosoft" | "FaAws";
     color: string;
     proficiency?: number;
 };
@@ -83,14 +83,14 @@ export const skillIcons: Record<string, SkillIcon> = {
     "ESLint/Prettier": { icon: "SiEslint", color: "#4B32C3", proficiency: 85 },
     "GitHub Actions": { icon: "SiGithubactions", color: "#2088FF", proficiency: 75 },
     CircleCI: { icon: "SiCircleci", color: "#343434", proficiency: 70 },
-    Azure: { icon: "SiMicrosoftazure", color: "#0078D4", proficiency: 70 },
+    Azure: { icon: "FaMicrosoft", color: "#0078D4", proficiency: 70 },
     "Unit Testing (Jest, Mocha)": { icon: "SiJest", color: "#C21325", proficiency: 70 },
     Figma: { icon: "SiFigma", color: "#F24E1E", proficiency: 75 },
     Git: { icon: "FaGit", color: "#F05032", proficiency: 85 },
     "GitHub/GitLab": { icon: "FaGithub", color: "#181717", proficiency: 80 },
     Kubernetes: { icon: "SiKubernetes", color: "#326CE5", proficiency: 50 },
     Docker: { icon: "SiDocker", color: "#2496ED", proficiency: 75 },
-    AWS: { icon: "SiAmazonaws", color: "#FF9900", proficiency: 80 },
+    AWS: { icon: "FaAws", color: "#FF9900", proficiency: 80 },
     "Google Cloud Platform": { icon: "SiGooglecloud", color: "#4285F4", proficiency: 70 },
     "End-to-End Testing": { icon: "SiCypress", color: "#17202C", proficiency: 65 },
     PostgreSQL: { icon: "SiPostgresql", color: "#336791", proficiency: 75 },
