@@ -1,5 +1,5 @@
 import { FaHtml5, FaReact, FaPython, FaTerminal, FaNodeJs, FaJs, FaCss3Alt, FaRocket, FaServer, FaLock, FaGit, FaGithub, FaMicrosoft, FaAws } from "react-icons/fa";
-import { SiFlask, SiFastapi, SiMongodb, SiTensorflow, SiScikitlearn, SiPandas, SiRender, SiTypescript, SiNextdotjs, SiTailwindcss, SiPhp, SiCplusplus, SiMysql, SiJenkins, SiGraphql, SiRedis, SiFirebase, SiWebpack, SiEslint, SiGithubactions, SiCircleci, SiJest, SiFigma, SiKubernetes, SiDocker, SiGooglecloud, SiCypress, SiPostgresql } from "react-icons/si";
+import { SiFlask, SiFastapi, SiMongodb, SiTensorflow, SiScikitlearn, SiPandas, SiRender, SiTypescript, SiNextdotjs, SiTailwindcss, SiPhp, SiCplusplus, SiMysql, SiJenkins, SiGraphql, SiWebpack, SiGithubactions, SiJest, SiFigma, SiGooglecloud, SiCypress, SiPostgresql, SiVercel } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
 import { skillIcons, SkillIcon as ProjectSkillIcon } from "../data/projects";
 
@@ -30,23 +30,18 @@ const iconComponents = {
     FaServer,
     FaLock,
     SiGraphql,
-    SiRedis,
-    SiFirebase,
     SiWebpack,
-    SiEslint,
     SiGithubactions,
-    SiCircleci,
     SiJest,
     SiFigma,
-    FaGit,
-    FaGithub,
-    SiKubernetes,
-    SiDocker,
     SiGooglecloud,
     SiCypress,
     SiPostgresql,
+    SiVercel,
+    FaGit,
+    FaGithub,
     FaMicrosoft,
-    FaAws,
+    FaAws
 };
 
 interface SkillIcon {
@@ -60,11 +55,11 @@ const typedSkillIcons: Record<string, ProjectSkillIcon> = skillIcons;
 const skillSections = {
     Frontend: ["React", "Next.js", "TypeScript", "JavaScript (ES6+)", "CSS Frameworks", "Web Performance Optimization", "Tailwind", "HTML & Bootstrap", "JSON"],
     Backend: ["Node.js", "RESTful APIs", "GraphQL", "Authentication (OAuth, JWT)", "PHP", "FastAPI", "Flask", "Render"],
-    Database: ["MongoDB", "PostgreSQL", "Redis", "Firebase", "SQL"],
-    DevOps: ["Docker", "Kubernetes", "GitHub Actions", "CircleCI", "CI/CD Pipelines", "Shell Scripting"],
-    Cloud: ["AWS", "Google Cloud Platform", "Azure"],
+    Database: ["MongoDB", "PostgreSQL", "SQL"],
+    DevOps: ["GitHub Actions", "CI/CD Pipelines", "Shell Scripting"],
+    Cloud: ["AWS", "Google Cloud Platform", "Azure", "Vercel"],
     Testing: ["Unit Testing (Jest, Mocha)"],
-    Tools: ["Webpack/Vite", "ESLint/Prettier", "Figma", "Git", "GitHub/GitLab"],
+    Tools: ["Webpack/Vite", "Figma", "Git", "GitHub/GitLab"],
     DataScience: ["Python", "Machine Learning", "Scikit-learn", "Pandas"],
     SoftSkills: ["Problem-Solving", "Communication", "Team Collaboration", "Time Management"],
 };
