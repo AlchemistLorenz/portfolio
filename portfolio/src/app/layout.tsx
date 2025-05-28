@@ -5,7 +5,10 @@ import PageTransition from "../components/PageTransition";
 
 export const metadata ={
   title: "Lorenz V. Wilkins",
-  description: "Portfolio of Lorenz V. Wilkins"
+  description: "Portfolio of Lorenz V. Wilkins",
+  icons: {
+    icon: '/images/projects/favicon.ico',
+  }
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
