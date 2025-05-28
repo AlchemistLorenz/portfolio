@@ -3,7 +3,7 @@
 A modern, responsive personal portfolio built with Next.js, Tailwind CSS, and TypeScript. Showcases projects, skills, theme toggle, and smooth page transitions.
 
 ## Live Demo
-[Website](https://alchemistlorenz.io)
+This is where you can find my [Website](https://alchemistlorenz.io)
 
 ## Features
 - Responsive Navbar with dropdown and modal
