@@ -9,7 +9,7 @@ This is where you can find my [Website](https://alchemistlorenz.io)
 - Responsive Navbar with dropdown and modal
 - Light/dark theme toggle (CSS variables + localStorage)
 - Auto-scrolling skills carousel with icon “pills” and proficiency bars
-- Dynamic project pages (Markdown support via gray-matter + remark)
+- Dynamic project pages
 - Framer Motion page transitions
 
 ## Tech Stack
@@ -18,5 +18,4 @@ This is where you can find my [Website](https://alchemistlorenz.io)
 - Tailwind CSS v4 + PostCSS
 - Framer Motion
 - react-icons (FontAwesome, SimpleIcons, VS Code icons)
-- gray-matter & remark-html (Markdown pages)
 - Vercel (hosting + CI/CD)
