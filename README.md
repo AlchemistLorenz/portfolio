@@ -1,2 +1,22 @@
-# portfolio
-Personal Portfolio to showcase projects, side work, blog
+# Lorenz V. Wilkins Portfolio
+
+A modern, responsive personal portfolio built with Next.js, Tailwind CSS, and TypeScript. Showcases projects, skills, theme toggle, and smooth page transitions.
+
+## Live Demo
+[Website](https://alchemistlorenz.io)
+
+## Features
+- Responsive Navbar with dropdown and modal
+- Light/dark theme toggle (CSS variables + localStorage)
+- Auto-scrolling skills carousel with icon “pills” and proficiency bars
+- Dynamic project pages (Markdown support via gray-matter + remark)
+- Framer Motion page transitions
+
+## Tech Stack
+- Next.js 15 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS v4 + PostCSS
+- Framer Motion
+- react-icons (FontAwesome, SimpleIcons, VS Code icons)
+- gray-matter & remark-html (Markdown pages)
+- Vercel (hosting + CI/CD)
