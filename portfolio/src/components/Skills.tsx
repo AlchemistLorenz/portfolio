@@ -1,47 +1,14 @@
-import { FaHtml5, FaReact, FaPython, FaTerminal, FaNodeJs, FaJs, FaCss3Alt, FaRocket, FaServer, FaLock, FaGit, FaGithub, FaMicrosoft, FaAws } from "react-icons/fa";
-import { SiFlask, SiFastapi, SiMongodb, SiTensorflow, SiScikitlearn, SiPandas, SiRender, SiTypescript, SiNextdotjs, SiTailwindcss, SiPhp, SiCplusplus, SiMysql, SiJenkins, SiGraphql, SiWebpack, SiGithubactions, SiJest, SiFigma, SiGooglecloud, SiCypress, SiPostgresql, SiVercel } from "react-icons/si";
-import { VscJson } from "react-icons/vsc";
+import * as FaIcons from "react-icons/fa";
+import * as SiIcons from "react-icons/si";
+import * as VscIcons from "react-icons/vsc";
 import { skillIcons, SkillIcon as ProjectSkillIcon } from "../data/projects";
+import type { IconType } from 'react-icons';
 
-const iconComponents = {
-    SiFlask,
-    FaHtml5,
-    VscJson,
-    SiFastapi,
-    FaReact,
-    SiMongodb,
-    SiRender,
-    FaPython,
-    SiTensorflow,
-    SiScikitlearn,
-    SiPandas,
-    FaTerminal,
-    SiTypescript,
-    SiNextdotjs,
-    FaNodeJs,
-    SiTailwindcss,
-    SiPhp,
-    SiCplusplus,
-    SiMysql,
-    SiJenkins,
-    FaJs,
-    FaCss3Alt,
-    FaRocket,
-    FaServer,
-    FaLock,
-    SiGraphql,
-    SiWebpack,
-    SiGithubactions,
-    SiJest,
-    SiFigma,
-    SiGooglecloud,
-    SiCypress,
-    SiPostgresql,
-    SiVercel,
-    FaGit,
-    FaGithub,
-    FaMicrosoft,
-    FaAws
+// merge all icon sets into a single map for lookup
+const iconComponents: Record<string, IconType> = {
+  ...FaIcons,
+  ...SiIcons,
+  ...VscIcons,
 };
 
 interface SkillIcon {
